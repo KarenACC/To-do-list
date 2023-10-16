@@ -41,8 +41,6 @@ input.addEventListener('keydown', (e)=>{
 
 function moveTask(element){
     const elementToDelete = document.getElementById(`'${element}'`);
-    const completedTask = document.getElementsByClassName('completed-task')
-    console.log(elementToDelete);
 
 if (elementToDelete) {
     elementToDelete.remove();
@@ -50,7 +48,7 @@ if (elementToDelete) {
 
 const completed = `
                     <li class="inner-shadow completed-task" id="'${element}'">
-                        <button class="checked" id="checked")"></button>
+                        <button class="checked")"></button>
                         <p>${element}</p>
                     </li>
                      `

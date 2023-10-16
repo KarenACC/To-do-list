@@ -4,11 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
-font-family: 'League Spartan', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body{
@@ -154,7 +154,11 @@ ul li p{
     background-color: #728F9D;
 }
 
-/* media quieres */
+.checked:hover{
+    cursor: default;
+}
+
+/* media queries */
 
 @media screen and (max-width:1090px){
 
