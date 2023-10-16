@@ -1,0 +1,195 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #404B59;
+    display:flex ;
+    justify-content: center;
+    color: #728F9D;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    padding: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.inner-shadow{
+    -webkit-box-shadow: inset 3px 2px 5px 0px rgba(0,0,0,0.27);
+    -moz-box-shadow: inset 3px 2px 5px 0px rgba(0,0,0,0.27);
+    box-shadow: inset 3px 2px 5px 0px rgba(0,0,0,0.27);
+}
+
+.outer-shadow{
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.32);
+box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.32),
+         -2px -4px 15px 0px rgba(96,120,131,0.64);
+}
+/* Estilos para la sección del input */
+
+.add-task{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 50px 0px;
+} 
+
+.add-task-form{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.add-task-form input{
+    width:95%;
+    border-radius: 20px;
+    height: 90%;
+    border: none;
+    background-color: #404B59;
+    color: #728F9D;
+    margin-left: 20px;
+    font-size: 15px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder{
+    color:#728F9D;;
+}
+    
+.add-task-form button{
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    background-color: #404B59;
+    color: #728F9D;
+}
+
+.add-task-form button span{
+    font-size: 35px;
+}
+
+/* Estilos para la lista de tareas */
+
+.tasks-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 15px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.tasks-list ul{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+/* Estilos para cada elemento tarea */
+li{
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+ul li p{
+    font-weight: 600;
+}
+
+
+.checker{
+    margin: 10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border:2px solid #728F9D;
+    background-color: #404B59;
+}
+
+/* Estilos para las tareas completadas */
+
+.completed-task p{
+    text-decoration: line-through;
+    text-decoration-thickness: 3px; 
+    text-decoration-style: solid
+
+}
+
+.checked{
+    margin: 10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border:2px solid #728F9D;
+    background-color: #728F9D;
+}
+
+/* media quieres */
+
+@media screen and (max-width:1090px){
+
+    h1{
+        margin: 20px;
+    }
+
+    h2{
+        margin-bottom: 10px;
+    }
+
+    li{
+        margin:10px 0px;
+    }
+}
+@media screen and (max-width:800px){
+    .container{
+        width: 90%;
+    }
+
+    li{
+        padding: 0;
+    }
+
+}
+@media screen and (max-width:550px){
+    .container{
+        padding: 5px;
+    }
+
+    .add-task-form{
+        width: 100%;
+    }
+
+    li{
+        width: 100%;
+    }
+}
